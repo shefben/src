@@ -58,7 +58,6 @@
         '$(SDKROOT)/System/Library/Frameworks/OpenGL.framework',
         '$(SDKROOT)/System/Library/Frameworks/QuartzCore.framework',
         '$(SDKROOT)/System/Library/Frameworks/SystemConfiguration.framework',
-        '<(PRODUCT_DIR)/JavaScriptCore.framework',
         'libicucore.dylib',
         'libobjc.dylib',
         'libxml2.dylib',
