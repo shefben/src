@@ -21,7 +21,7 @@
 #ifndef ChromeClient_h
 #define ChromeClient_h
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Console.h"
 #include "Cursor.h"
 #include "FocusDirection.h"

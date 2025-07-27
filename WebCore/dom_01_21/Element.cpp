@@ -26,7 +26,7 @@
 #include "config.h"
 #include "Element.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Attr.h"
 #include "CSSParser.h"
 #include "CSSSelectorList.h"

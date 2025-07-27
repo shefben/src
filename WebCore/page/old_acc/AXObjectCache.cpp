@@ -27,7 +27,7 @@
  */
 
 #include "config.h"
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 
 #include "AccessibilityList.h"
 #include "AccessibilityListBox.h"

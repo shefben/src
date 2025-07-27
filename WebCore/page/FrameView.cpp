@@ -27,7 +27,7 @@
 #include "config.h"
 #include "FrameView.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CSSStyleSelector.h"
 #include "CachedResourceLoader.h"
 #include "Chrome.h"

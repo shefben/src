@@ -21,7 +21,7 @@
 #import "config.h"
 #import "PopupMenuMac.h"
 
-#import "AXObjectCache.h"
+#import "AXObjectCacheStub.h"
 #import "Chrome.h"
 #import "ChromeClient.h"
 #import "EventHandler.h"

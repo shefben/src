@@ -22,7 +22,7 @@
 #include "config.h"
 #include "RenderTextControl.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Editor.h"
 #include "Event.h"
 #include "EventNames.h"

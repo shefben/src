@@ -33,7 +33,7 @@
 #include "AccessibilityTableColumn.h"
 #include "AccessibilityTableHeaderContainer.h"
 #include "AccessibilityTableRow.h"
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "HTMLNames.h"
 #include "HTMLTableElement.h"
 #include "HTMLTableCaptionElement.h"

@@ -29,7 +29,7 @@
 #include "config.h"
 #include "AccessibilityListBoxOption.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "AccessibilityListBox.h"
 #include "Element.h"
 #include "HTMLElement.h"

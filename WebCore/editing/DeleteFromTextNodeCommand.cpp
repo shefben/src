@@ -26,7 +26,7 @@
 #include "config.h"
 #include "DeleteFromTextNodeCommand.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Text.h"
 
 namespace WebCore {

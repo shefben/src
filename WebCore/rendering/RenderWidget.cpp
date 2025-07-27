@@ -23,7 +23,7 @@
 #include "config.h"
 #include "RenderWidget.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "AnimationController.h"
 #include "GraphicsContext.h"
 #include "HitTestResult.h"

@@ -27,7 +27,7 @@
 #include "config.h"
 #include "Document.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "AnimationController.h"
 #include "Attr.h"
 #include "Attribute.h"

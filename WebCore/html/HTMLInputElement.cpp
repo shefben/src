@@ -27,7 +27,7 @@
 #include "config.h"
 #include "HTMLInputElement.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Attribute.h"
 #include "BeforeTextInsertedEvent.h"
 #include "CSSPropertyNames.h"

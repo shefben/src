@@ -27,7 +27,7 @@
 #include "config.h"
 #include "Editor.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "ApplyStyleCommand.h"
 #include "CSSComputedStyleDeclaration.h"
 #include "CSSMutableStyleDeclaration.h"

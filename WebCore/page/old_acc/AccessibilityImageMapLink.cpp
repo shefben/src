@@ -30,7 +30,7 @@
 #include "AccessibilityImageMapLink.h"
 
 #include "AccessibilityRenderObject.h"
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Document.h"
 #include "HTMLNames.h"
 #include "IntRect.h"

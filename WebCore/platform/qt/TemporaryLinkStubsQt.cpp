@@ -32,7 +32,7 @@
 
 #include "config.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CachedResource.h"
 #include "CookieJar.h"
 #include "CookieStorage.h"

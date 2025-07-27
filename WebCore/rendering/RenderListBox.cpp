@@ -30,7 +30,7 @@
 #include "config.h"
 #include "RenderListBox.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CSSStyleSelector.h"
 #include "Document.h"
 #include "EventHandler.h"
