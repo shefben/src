@@ -91,8 +91,7 @@ static void initializeSupportedImageMIMETypes()
     supportedImageMIMETypes->remove("application/octet-stream");
     supportedImageResourceMIMETypes->remove("application/octet-stream");
 
-    //  Don't treat pdf/postscript as images directly
-    supportedImageMIMETypes->remove("application/pdf");
+    //  Don't treat postscript as an image directly
     supportedImageMIMETypes->remove("application/postscript");
 
 #elif 0 // PLATFORM(QT)

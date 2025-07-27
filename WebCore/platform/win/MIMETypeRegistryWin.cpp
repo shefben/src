@@ -75,7 +75,6 @@ String MIMETypeRegistry::getMIMETypeForExtension(const String &ext)
     if (mimetypeMap.isEmpty()) {
         //fill with initial values
         mimetypeMap.add("txt", "text/plain");
-        mimetypeMap.add("pdf", "application/pdf");
         mimetypeMap.add("ps", "application/postscript");
         mimetypeMap.add("html", "text/html");
         mimetypeMap.add("htm", "text/html");
