@@ -976,6 +976,10 @@
 #define ENABLE_NOTIFICATIONS 0
 #endif
 
+#if !defined(ENABLE_WEB_SOCKETS)
+#define ENABLE_WEB_SOCKETS 0
+#endif
+
 #if PLATFORM(IOS)
 #define ENABLE_TEXT_CARET 0
 #endif
