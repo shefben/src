@@ -12195,43 +12195,33 @@
 					Name="history"
 					>
 					<File
-						RelativePath="..\WebCore\history\BackForwardController.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\BackForwardList.h"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\BackForwardListImpl.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\CachedPage.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\cachedpage.h"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\CachedPagePlatformData.h"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\HistoryItem.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\HistoryItem.h"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\PageCache.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\WebCore\history\PageCache.h"
 						>
 					</File>
 				</Filter>

@@ -45,7 +45,6 @@
 #include "HTMLPlugInElement.h"
 #include "HTTPParsers.h"
 #include "HTTPStatusCodes.h"
-#include "HistoryItem.h"
 #include "HitTestResult.h"
 #if ENABLE(ICONDATABASE)
 #include "IconDatabaseClientQt.h"
@@ -61,6 +60,8 @@
 #include "PluginDatabase.h"
 #include "ProgressTracker.h"
 #include "QNetworkReplyHandler.h"
+
+namespace WebCore { class HistoryItem; }
 #include "QWebPageClient.h"
 #include "RenderPart.h"
 #include "ResourceHandle.h"
@@ -76,7 +77,6 @@
 
 #include "qwebframe.h"
 #include "qwebframe_p.h"
-#include "qwebhistory_p.h"
 #include "qwebhistoryinterface.h"
 #include "qwebpage.h"
 #include "qwebpage_p.h"
@@ -875,7 +875,8 @@ void FrameLoaderClientQt::didRunInsecureContent(WebCore::SecurityOrigin*, const 
 
 void FrameLoaderClientQt::saveViewStateToItem(WebCore::HistoryItem* item)
 {
-    QWebHistoryItem historyItem(new QWebHistoryItemPrivate(item));
+    Q_UNUSED(item);
+    QWebHistoryItem historyItem;
     emit m_webFrame->page()->saveFrameStateRequested(m_webFrame, &historyItem);
 }
 

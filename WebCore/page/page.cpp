@@ -143,7 +143,7 @@ Page::Page(PageClients& pageClients)
 #endif
     , m_settings(adoptPtr(new Settings(this)))
     , m_progress(adoptPtr(new ProgressTracker))
-    , m_backForwardController(adoptPtr(new BackForwardController(this, pageClients.backForwardClient)))
+    , m_backForwardController(nullptr)
     , m_theme(RenderTheme::themeForPage(this))
     , m_editorClient(pageClients.editorClient)
     , m_frameCount(0)
@@ -204,7 +204,7 @@ Page::~Page()
 
     InspectorInstrumentation::inspectedPageDestroyed(this);
 
-    backForward()->close();
+    // history stub
 
 #ifndef NDEBUG
     pageCounter.decrement();
@@ -273,83 +273,38 @@ void Page::setOpenedByDOM()
 
 BackForwardList* Page::backForwardList() const
 {
-    return m_backForwardController->client();
+    return nullptr;
 }
 
 bool Page::goBack()
 {
-    HistoryItem* item = backForward()->backItem();
-    
-    if (item) {
-        goToItem(item, FrameLoadTypeBack);
-        return true;
-    }
     return false;
 }
 
 bool Page::goForward()
 {
-    HistoryItem* item = backForward()->forwardItem();
-    
-    if (item) {
-        goToItem(item, FrameLoadTypeForward);
-        return true;
-    }
     return false;
 }
 
 bool Page::canGoBackOrForward(int distance) const
 {
-    if (distance == 0)
-        return true;
-    if (distance > 0 && distance <= backForward()->forwardCount())
-        return true;
-    if (distance < 0 && -distance <= backForward()->backCount())
-        return true;
     return false;
 }
 
 void Page::goBackOrForward(int distance)
 {
-    if (distance == 0)
-        return;
-
-    HistoryItem* item = backForward()->itemAtIndex(distance);
-    if (!item) {
-        if (distance > 0) {
-            if (int forwardCount = backForward()->forwardCount()) 
-                item = backForward()->itemAtIndex(forwardCount);
-        } else {
-            if (int backCount = backForward()->backCount())
-                item = backForward()->itemAtIndex(-backCount);
-        }
-    }
-
-    ASSERT(item);
-    if (!item)
-        return;
-
-    goToItem(item, FrameLoadTypeIndexedBackForward);
+    Q_UNUSED(distance);
 }
 
 void Page::goToItem(HistoryItem* item, FrameLoadType type)
 {
-    if (defersLoading())
-        return;
-
-    // stopAllLoaders may end up running onload handlers, which could cause further history traversals that may lead to the passed in HistoryItem
-    // being deref()-ed. Make sure we can still use it with HistoryController::goToItem later.
-    RefPtr<HistoryItem> protector(item);
-
-    if (m_mainFrame->loader()->history()->shouldStopLoadingForHistoryItem(item))
-        m_mainFrame->loader()->stopAllLoaders();
-
-    m_mainFrame->loader()->history()->goToItem(item, type);
+    Q_UNUSED(item);
+    Q_UNUSED(type);
 }
 
 int Page::getHistoryLength()
 {
-    return backForward()->backCount() + 1 + backForward()->forwardCount();
+    return 1;
 }
 
 void Page::setGroupName(const String& name)
