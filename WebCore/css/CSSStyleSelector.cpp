@@ -1367,17 +1367,6 @@ PassRefPtr<RenderStyle> CSSStyleSelector::styleForElement(Element* e, RenderStyl
     }
 #endif
 
-#if ENABLE(VIDEO)
-    static bool loadedMediaStyleSheet;
-    if (!loadedMediaStyleSheet && (e->hasTagName(videoTag) || e->hasTagName(audioTag))) {
-        loadedMediaStyleSheet = true;
-        String mediaRules = String(mediaControlsUserAgentStyleSheet, sizeof(mediaControlsUserAgentStyleSheet)) + RenderTheme::themeForPage(e->document()->page())->extraMediaControlsStyleSheet();
-        CSSStyleSheet* mediaControlsSheet = parseUASheet(mediaRules);
-        defaultStyle->addRulesFromSheet(mediaControlsSheet, screenEval());
-        defaultPrintStyle->addRulesFromSheet(mediaControlsSheet, printEval());
-        assertNoSiblingRulesInDefaultStyle();
-    }
-#endif
 
 #if ENABLE(FULLSCREEN_API)
     static bool loadedFullScreenStyleSheet;
