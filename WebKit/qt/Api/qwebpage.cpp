@@ -27,9 +27,6 @@
 #include "qwebpage_p.h"
 #include "qwebframe_p.h"
 #include "qwebhistory.h"
-#include "qwebhistory_p.h"
-#include "qwebinspector.h"
-#include "qwebinspector_p.h"
 #include "qwebsettings.h"
 #include "qwebkitplatformplugin.h"
 #include "qwebkitversion.h"
@@ -37,7 +34,6 @@
 #include "CSSComputedStyleDeclaration.h"
 #include "CSSParser.h"
 #include "ApplicationCacheStorage.h"
-#include "BackForwardListImpl.h"
 #include "MemoryCache.h"
 #include "Chrome.h"
 #include "ChromeClientQt.h"
@@ -74,9 +70,6 @@
 #include "HashMap.h"
 #include "HitTestResult.h"
 #include "Image.h"
-#include "InspectorClientQt.h"
-#include "InspectorController.h"
-#include "InspectorServerQt.h"
 #include "KURL.h"
 #include "LocalizedStrings.h"
 #include "Logging.h"
@@ -314,9 +307,6 @@ QWebPagePrivate::QWebPagePrivate(QWebPage *qq)
     , settings(0)
     , useFixedLayout(false)
     , pluginFactory(0)
-    , inspectorFrontend(0)
-    , inspector(0)
-    , inspectorIsInternalOnly(false)
     , m_lastDropAction(Qt::IgnoreAction)
 {
     WebCore::InitializeLoggingChannelsIfNecessary();
@@ -335,7 +325,7 @@ QWebPagePrivate::QWebPagePrivate(QWebPage *qq)
     pageClients.contextMenuClient = new ContextMenuClientQt();
     pageClients.editorClient = new EditorClientQt(q);
     pageClients.dragClient = new DragClientQt(q);
-    pageClients.inspectorClient = new InspectorClientQt(q);
+    pageClients.inspectorClient = 0;
 #if ENABLE(DEVICE_ORIENTATION)
     pageClients.deviceOrientationClient = new DeviceOrientationClientQt(q);
     pageClients.deviceMotionClient = new DeviceMotionClientQt(q);
@@ -361,8 +351,6 @@ QWebPagePrivate::QWebPagePrivate(QWebPage *qq)
         static_cast<GeolocationClientMock*>(pageClients.geolocationClient)->setController(page->geolocationController());
 #endif
     settings = new QWebSettings(page->settings());
-
-    history.d = new QWebHistoryPrivate(static_cast<WebCore::BackForwardListImpl*>(page->backForwardList()));
     memset(actions, 0, sizeof(actions));
 
     PageGroup::setShouldTrackVisitedLinks(true);
@@ -374,11 +362,6 @@ QWebPagePrivate::QWebPagePrivate(QWebPage *qq)
 
 QWebPagePrivate::~QWebPagePrivate()
 {
-    if (inspector && inspectorIsInternalOnly) {
-        // Since we have to delete an internal inspector,
-        // call setInspector(0) directly to prevent potential crashes
-        setInspector(0);
-    }
 #ifndef QT_NO_CONTEXTMENU
     delete currentContextMenu;
 #endif
@@ -388,8 +371,6 @@ QWebPagePrivate::~QWebPagePrivate()
     delete settings;
     delete page;
     
-    if (inspector)
-        inspector->setPage(0);
 
 #if ENABLE(NOTIFICATIONS)
     NotificationPresenterClientQt::notificationPresenter()->removeClient();
@@ -1238,10 +1219,7 @@ void QWebPagePrivate::dynamicPropertyChangeEvent(QDynamicPropertyChangeEvent* ev
         frame->tiledBackingStore()->setKeepAndCoverAreaMultipliers(keepMultiplier, coverMultiplier);
     }
 #endif
-    else if (event->propertyName() == "_q_webInspectorServerPort") {
-        InspectorServerQt* inspectorServer = InspectorServerQt::server();
-        inspectorServer->listen(inspectorServerPort());
-    } else if (event->propertyName() == "_q_deadDecodedDataDeletionInterval") {
+    else if (event->propertyName() == "_q_deadDecodedDataDeletionInterval") {
         double interval = q->property("_q_deadDecodedDataDeletionInterval").toDouble();
         memoryCache()->setDeadDecodedDataDeletionInterval(interval);
     }
@@ -1482,62 +1460,6 @@ QVariant QWebPage::inputMethodQuery(Qt::InputMethodQuery property) const
 /*!
     \internal
 */
-void QWebPagePrivate::setInspector(QWebInspector* insp)
-{
-    if (inspector)
-        inspector->d->setFrontend(0);
-
-    if (inspectorIsInternalOnly) {
-        QWebInspector* inspToDelete = inspector;
-        inspector = 0;
-        inspectorIsInternalOnly = false;
-        delete inspToDelete;    // Delete after to prevent infinite recursion
-    }
-
-    inspector = insp;
-
-    // Give inspector frontend web view if previously created
-    if (inspector && inspectorFrontend)
-        inspector->d->setFrontend(inspectorFrontend);
-}
-
-/*!
-    \internal
-    Returns the inspector and creates it if it wasn't created yet.
-    The instance created here will not be available through QWebPage's API.
-*/
-QWebInspector* QWebPagePrivate::getOrCreateInspector()
-{
-#if ENABLE(INSPECTOR)
-    if (!inspector) {
-        QWebInspector* insp = new QWebInspector;
-        insp->setPage(q);
-        inspectorIsInternalOnly = true;
-
-        Q_ASSERT(inspector); // Associated through QWebInspector::setPage(q)
-    }
-#endif
-    return inspector;
-}
-
-/*! \internal */
-InspectorController* QWebPagePrivate::inspectorController()
-{
-#if ENABLE(INSPECTOR)
-    return page->inspectorController();
-#else
-    return 0;
-#endif
-}
-
-quint16 QWebPagePrivate::inspectorServerPort()
-{
-#if ENABLE(INSPECTOR) && !defined(QT_NO_PROPERTIES)
-    if (q && q->property("_q_webInspectorServerPort").isValid())
-        return q->property("_q_webInspectorServerPort").toInt();
-#endif
-    return 0;
-}
 
 static bool hasMouseListener(Element* element)
 {

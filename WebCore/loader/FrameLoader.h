@@ -34,7 +34,6 @@
 #include "CachePolicy.h"
 #include "FrameLoaderStateMachine.h"
 #include "FrameLoaderTypes.h"
-#include "HistoryController.h"
 #include "IconDatabaseBase.h"
 #include "IconURL.h"
 #include "PolicyChecker.h"
@@ -99,7 +98,7 @@ public:
     Frame* frame() const { return m_frame; }
 
     PolicyChecker* policyChecker() const { return &m_policyChecker; }
-    HistoryController* history() const { return &m_history; }
+    void* history() const { return 0; }
     ResourceLoadNotifier* notifier() const { return &m_notifer; }
     SubframeLoader* subframeLoader() const { return &m_subframeLoader; } // weolar
 
@@ -441,7 +440,7 @@ private:
     FrameLoaderClient* m_client;
 
     mutable PolicyChecker m_policyChecker;
-    mutable HistoryController m_history;
+    mutable void* m_history;
     mutable ResourceLoadNotifier m_notifer;
     // weolar
     mutable SubframeLoader m_subframeLoader;

@@ -2098,10 +2098,7 @@ void FrameLoader::transitionToCommitted(PassRefPtr<CachedPage> cachedPage)
                 // If the first load within a frame is a navigation within a back/forward list that was attached
                 // without any of the items being loaded then we need to update the history in a similar manner as
                 // for a standard load with the exception of updating the back/forward list (<rdar://problem/8091103>).
-                if (!m_stateMachine.committedFirstRealDocumentLoad())
-                    history()->updateForStandardLoad(HistoryController::UpdateAllExceptBackForwardList);
-
-                history()->updateForBackForwardNavigation();
+                // history stub
 
                 // For cached pages, CachedFrame::restore will take care of firing the popstate event with the history item's state object
                 if (history()->currentItem() && !cachedPage)

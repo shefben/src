@@ -25,7 +25,6 @@
 #if ENABLE(WML)
 #include "WMLPageState.h"
 
-#include "HistoryItem.h"
 #include "KURL.h"
 #include "Page.h"
 
@@ -49,10 +48,6 @@ void WMLPageState::reset()
     // remove all the variables in the current browser context
     m_variables.clear();
 
-    // clear the navigation history state 
-    if (m_page)
-        m_page->backForwardList()->clearWmlPageHistory();
-
     // reset implementation-specfic state if UA has
     m_historyLength = 1;
 }
@@ -71,60 +66,8 @@ bool WMLPageState::setNeedCheckDeckAccess(bool need)
 // FIXME: We may want another name, it does far more than just checking wheter the deck is accessable
 bool WMLPageState::isDeckAccessible()
 {
-    if (!m_hasDeckAccess || !m_page || !m_page->backForwardList() || !m_page->backForwardList()->backItem())
-        return true;
-
-    HistoryItem* histItem = m_page->backForwardList()->backItem();
-    KURL url(histItem->urlString());
-
-    String prevHost = url.host();
-    String prevPath = url.path();
-
-    // for 'file' URI, the host part may be empty, so we should complete it.
-    if (prevHost.isEmpty())
-        prevHost = "localhost";
-
-    histItem = m_page->backForwardList()->currentItem();
-    KURL curUrl(histItem->urlString());
-    String curPath = curUrl.path();
-
-    if (equalIgnoringRef(url, curUrl))
-       return true;
-
-    // "/" is the default value if not specified
-    if (m_accessPath.isEmpty())  
-        m_accessPath = "/";
-    else if (m_accessPath.endsWith("/") && (m_accessPath != "/"))
-        m_accessPath = m_accessPath.left((m_accessPath.length()-1));
-
-
-    // current deck domain is the default value if not specified
-    if (m_accessDomain.isEmpty())
-        m_accessDomain = prevHost;
-
-    // convert relative URL to absolute URL before performing path matching
-    if (prevHost == m_accessDomain) {
-        if (!m_accessPath.startsWith("/")) {
-           int index = curPath.reverseFind('/');
-           if (index != -1) {
-               curPath = curPath.left(index + 1);
-               curPath += m_accessPath;
-               curUrl.setPath(curPath);
-               m_accessPath = curUrl.path();
-           }
-        }
-    }
-
-    // path prefix matching
-    if (prevPath.startsWith(m_accessPath) && 
-       (prevPath[m_accessPath.length()] == '/' || prevPath.length() == m_accessPath.length())) {
-        // domain suffix matching
-        unsigned domainLength = m_accessDomain.length();
-        unsigned hostLength = prevHost.length();
-        return (prevHost.endsWith(m_accessDomain) && prevHost[hostLength - domainLength - 1] == '.') || hostLength == domainLength;
-    }
-
-    return false;
+    Q_UNUSED(m_page);
+    return true;
 }
 
 }

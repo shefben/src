@@ -149,10 +149,6 @@ public:
     void adjustPointForClicking(QGraphicsSceneMouseEvent*);
 #endif
 
-    void setInspector(QWebInspector*);
-    QWebInspector* getOrCreateInspector();
-    WebCore::InspectorController* inspectorController();
-    quint16 inspectorServerPort();
 
     WebCore::ViewportArguments viewportArguments();
 
@@ -206,9 +202,6 @@ public:
 
     QWebPluginFactory *pluginFactory;
 
-    QWidget* inspectorFrontend;
-    QWebInspector* inspector;
-    bool inspectorIsInternalOnly; // True if created through the Inspect context menu action
     Qt::DropAction m_lastDropAction;
 
     static bool drtRun;

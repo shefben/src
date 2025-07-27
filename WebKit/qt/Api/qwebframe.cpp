@@ -46,7 +46,6 @@
 #include "HitTestResult.h"
 #include "HTTPParsers.h"
 #include "IconDatabase.h"
-#include "InspectorController.h"
 #if USE(JSC)
 #include "JSDOMBinding.h"
 #include "JSDOMWindowBase.h"

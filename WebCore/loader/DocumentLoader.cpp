@@ -42,7 +42,6 @@
 #include "FrameLoader.h"
 #include "FrameLoaderClient.h"
 #include "FrameTree.h"
-#include "HistoryItem.h"
 #include "Logging.h"
 #include "MainResourceLoader.h"
 #include "Page.h"
