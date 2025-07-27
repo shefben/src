@@ -19,7 +19,6 @@
 #include "config.h"
 #include "PluginView.h"
 
-#include "BridgeJSC.h"
 #include "Chrome.h"
 #include "ChromeClient.h"
 #include "Document.h"

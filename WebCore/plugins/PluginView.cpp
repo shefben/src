@@ -28,9 +28,6 @@
 #include "config.h"
 #include "PluginView.h"
 
-#if USE(JSC)
-#include "BridgeJSC.h"
-#endif
 #include "Chrome.h"
 #include "CookieJar.h"
 #include "Document.h"
@@ -767,27 +764,7 @@ NPObject* PluginView::npObject()
 #if USE(JSC)
 PassRefPtr<JSC::Bindings::Instance> PluginView::bindingInstance()
 {
-#if ENABLE(NETSCAPE_PLUGIN_API)
-    NPObject* object = npObject();
-    if (!object)
-        return 0;
-
-    if (hasOneRef()) {
-        // The renderer for the PluginView was destroyed during the above call, and
-        // the PluginView will be destroyed when this function returns, so we
-        // return null.
-        return 0;
-    }
-
-    RefPtr<JSC::Bindings::RootObject> root = m_parentFrame->script()->createRootObject(this);
-    RefPtr<JSC::Bindings::Instance> instance = JSC::Bindings::CInstance::create(object, root.release());
-
-    _NPN_ReleaseObject(object);
-
-    return instance.release();
-#else
     return 0;
-#endif
 }
 #endif
 

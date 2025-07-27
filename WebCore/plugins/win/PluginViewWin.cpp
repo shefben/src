@@ -29,7 +29,6 @@
 #include "PluginView.h"
 
 #include "BitmapImage.h"
-#include "BridgeJSC.h"
 #include "Chrome.h"
 #include "ChromeClient.h"
 #include "Document.h"

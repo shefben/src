@@ -32,7 +32,7 @@
 #include "FrameView.h"
 #include "GraphicsContext.h"
 #include "HTMLElement.h"
-#if USE(JSC)
+#if USE(JSC) && ENABLE(JAVA_BRIDGE)
 #include "JSGlobalObject.h"
 #include "JSHTMLElement.h"
 #include "JSObject.h"
@@ -796,8 +796,11 @@ QVariant QWebElement::evaluateJavaScript(const QString& scriptSource)
     if (!result)
         return QVariant();
 
+#if USE(JSC) && ENABLE(JAVA_BRIDGE)
     int distance = 0;
     return JSC::Bindings::convertValueToQVariant(state, result, QMetaType::Void, &distance);
+#elif USE(JSC)
+    return QVariant();
 #elif USE(V8)
     notImplemented();
     return QVariant();

@@ -146,6 +146,7 @@ void clearPthreadHandleForIdentifier(ThreadIdentifier id)
 static void* runThreadWithRegistration(void* arg)
 {
     OwnPtr<ThreadFunctionInvocation> invocation = adoptPtr(static_cast<ThreadFunctionInvocation*>(arg));
+#if ENABLE(JAVA_BRIDGE)
     JavaVM* vm = JSC::Bindings::getJavaVM();
     JNIEnv* env;
     void* ret = 0;
@@ -154,6 +155,10 @@ static void* runThreadWithRegistration(void* arg)
         vm->DetachCurrentThread();
     }
     return ret;
+#else
+    void* ret = invocation->function(invocation->data);
+    return ret;
+#endif
 }
 
 ThreadIdentifier createThreadInternal(ThreadFunction entryPoint, void* data, const char*)
