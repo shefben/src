@@ -53,7 +53,6 @@
 #include "Page.h"
 #include "PlatformMouseEvent.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include "PluginMainThreadScheduler.h"
 #include "PluginPackage.h"
 #include "ProxyServer.h"
@@ -64,6 +63,10 @@
 #include "Settings.h"
 #include "npruntime_impl.h"
 #include <wtf/ASCIICType.h>
+
+#ifndef LOG_NPERROR
+#define LOG_NPERROR(x) do { } while (0)
+#endif
 
 #if OS(WINDOWS) && ENABLE(NETSCAPE_PLUGIN_API)
 #include "PluginMessageThrottlerWin.h"
@@ -626,7 +629,7 @@ void PluginView::status(const char* message)
 
 NPError PluginView::setValue(NPPVariable variable, void* value)
 {
-    LOG(Plugins, "PluginView::setValue(%s): ", prettyNameForNPPVariable(variable, value).data());
+    LOG(Plugins, "PluginView::setValue called");
 
     switch (variable) {
     case NPPVpluginWindowBool:
@@ -651,8 +654,7 @@ NPError PluginView::setValue(NPPVariable variable, void* value)
 #endif
         case NPDrawingModelCoreAnimation:
         default:
-            LOG(Plugins, "Plugin asked for unsupported drawing model: %s",
-                    prettyNameForDrawingModel(newDrawingModel));
+            LOG(Plugins, "Plugin asked for unsupported drawing model");
             return NPERR_GENERIC_ERROR;
         }
     }
@@ -672,8 +674,7 @@ NPError PluginView::setValue(NPPVariable variable, void* value)
             return NPERR_NO_ERROR;
 
         default:
-            LOG(Plugins, "Plugin asked for unsupported event model: %s",
-                    prettyNameForEventModel(newEventModel));
+            LOG(Plugins, "Plugin asked for unsupported event model");
             return NPERR_GENERIC_ERROR;
         }
     }
@@ -1326,7 +1327,7 @@ void PluginView::keepAlive(NPP instance)
 
 NPError PluginView::getValueStatic(NPNVariable variable, void* value)
 {
-    LOG(Plugins, "PluginView::getValueStatic(%s)", prettyNameForNPNVariable(variable).data());
+    LOG(Plugins, "PluginView::getValueStatic called");
 
     NPError result;
     if (platformGetValueStatic(variable, value, &result))
@@ -1337,7 +1338,7 @@ NPError PluginView::getValueStatic(NPNVariable variable, void* value)
 
 NPError PluginView::getValue(NPNVariable variable, void* value)
 {
-    LOG(Plugins, "PluginView::getValue(%s)", prettyNameForNPNVariable(variable).data());
+    LOG(Plugins, "PluginView::getValue called");
 
     NPError result;
     if (platformGetValue(variable, value, &result))
@@ -1411,7 +1412,7 @@ static Frame* getFrame(Frame* parentFrame, Element* element)
 
 NPError PluginView::getValueForURL(NPNURLVariable variable, const char* url, char** value, uint32_t* len)
 {
-    LOG(Plugins, "PluginView::getValueForURL(%s)", prettyNameForNPNURLVariable(variable).data());
+    LOG(Plugins, "PluginView::getValueForURL called");
 
     NPError result = NPERR_NO_ERROR;
 
@@ -1462,7 +1463,7 @@ NPError PluginView::getValueForURL(NPNURLVariable variable, const char* url, cha
     }
     default:
         result = NPERR_GENERIC_ERROR;
-        LOG(Plugins, "PluginView::getValueForURL: %s", prettyNameForNPNURLVariable(variable).data());
+        LOG(Plugins, "PluginView::getValueForURL: unsupported variable");
         break;
     }
 
@@ -1472,7 +1473,7 @@ NPError PluginView::getValueForURL(NPNURLVariable variable, const char* url, cha
 
 NPError PluginView::setValueForURL(NPNURLVariable variable, const char* url, const char* value, uint32_t len)
 {
-    LOG(Plugins, "PluginView::setValueForURL(%s)", prettyNameForNPNURLVariable(variable).data());
+    LOG(Plugins, "PluginView::setValueForURL called");
 
     NPError result = NPERR_NO_ERROR;
 
@@ -1489,11 +1490,11 @@ NPError PluginView::setValueForURL(NPNURLVariable variable, const char* url, con
         break;
     }
     case NPNURLVProxy:
-        LOG(Plugins, "PluginView::setValueForURL(%s): Plugins are NOT allowed to set proxy information.", prettyNameForNPNURLVariable(variable).data());
+        LOG(Plugins, "PluginView::setValueForURL: Plugins are NOT allowed to set proxy information.");
         result = NPERR_GENERIC_ERROR;
         break;
     default:
-        LOG(Plugins, "PluginView::setValueForURL: %s", prettyNameForNPNURLVariable(variable).data());
+        LOG(Plugins, "PluginView::setValueForURL: unsupported variable");
         result = NPERR_GENERIC_ERROR;
         break;
     }

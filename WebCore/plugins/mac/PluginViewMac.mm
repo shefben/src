@@ -52,7 +52,6 @@
 #include "Page.h"
 #include "PlatformMouseEvent.h"
 #include "PlatformKeyboardEvent.h"
-#include "PluginDebug.h"
 #include "PluginPackage.h"
 #include "PluginMainThreadScheduler.h"
 #include "RenderLayer.h"
@@ -182,8 +181,8 @@ bool PluginView::platformStart()
             || !eventModelSupported) {
 #endif
         m_status = PluginStatusCanNotLoadPlugin;
-        LOG(Plugins, "Plug-in '%s' uses unsupported event model %s",
-                m_plugin->name().utf8().data(), prettyNameForEventModel(m_eventModel));
+        LOG(Plugins, "Plug-in '%s' uses unsupported event model",
+                m_plugin->name().utf8().data());
         return false;
 #ifndef NP_NO_CARBON
     }
@@ -195,8 +194,8 @@ bool PluginView::platformStart()
             || !drawingModelSupported) {
 #endif
         m_status = PluginStatusCanNotLoadPlugin;
-        LOG(Plugins, "Plug-in '%s' uses unsupported drawing model %s",
-                m_plugin->name().utf8().data(), prettyNameForDrawingModel(m_drawingModel));
+        LOG(Plugins, "Plug-in '%s' uses unsupported drawing model",
+                m_plugin->name().utf8().data());
         return false;
 #ifndef NP_NO_QUICKDRAW
     }

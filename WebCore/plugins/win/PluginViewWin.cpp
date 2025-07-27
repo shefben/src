@@ -56,7 +56,6 @@
 #include "Page.h"
 #include "PlatformMouseEvent.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include "PluginMainThreadScheduler.h"
 #include "PluginMessageThrottlerWin.h"
 #include "PluginPackage.h"
@@ -69,6 +68,10 @@
 #include <runtime/JSLock.h>
 #include <runtime/JSValue.h>
 #include <wtf/ASCIICType.h>
+
+#ifndef LOG_NPERROR
+#define LOG_NPERROR(x) do { } while (0)
+#endif
 
 #if !PLATFORM(WX)
 #include "BitmapInfo.h"

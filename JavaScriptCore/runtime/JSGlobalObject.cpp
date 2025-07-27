@@ -58,7 +58,6 @@
 #include "NumberPrototype.h"
 #include "ObjectConstructor.h"
 #include "ObjectPrototype.h"
-#include "Profiler.h"
 #include "RegExpConstructor.h"
 #include "RegExpMatchesArray.h"
 #include "RegExpObject.h"
@@ -91,10 +90,6 @@ JSGlobalObject::~JSGlobalObject()
     if (m_debugger)
         m_debugger->detach(this);
 
-    Profiler** profiler = Profiler::enabledProfilerReference();
-    if (UNLIKELY(*profiler != 0)) {
-        (*profiler)->stopProfiling(this);
-    }
 }
 
 void JSGlobalObject::init(JSObject* thisValue)

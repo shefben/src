@@ -43,7 +43,6 @@
 #include "ScriptArguments.h"
 #include "ScriptCallStack.h"
 #include "ScriptProfile.h"
-#include "ScriptProfiler.h"
 #include "ScriptValue.h"
 #include <stdio.h>
 #include <wtf/UnusedParam.h>
@@ -272,7 +271,6 @@ void Console::profile(const String& title, ScriptState* state, PassRefPtr<Script
 
     // weolar
     _asm int 3;
-    //ScriptProfiler::start(state, resolvedTitle);
 
     const ScriptCallFrame& lastCaller = callStack->at(0);
     InspectorInstrumentation::addStartProfilingMessageToConsole(page, resolvedTitle, lastCaller.lineNumber(), lastCaller.sourceURL());
@@ -289,12 +287,6 @@ void Console::profileEnd(const String& title, ScriptState* state, PassRefPtr<Scr
 
     // weolar
     __asm int 3;
-//     RefPtr<ScriptProfile> profile = ScriptProfiler::stop(state, title);
-//     if (!profile)
-//         return;
-// 
-//     m_profiles.append(profile);
-//     InspectorInstrumentation::addProfile(page, profile, callStack);
 }
 
 #endif

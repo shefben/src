@@ -44,7 +44,6 @@
 #include "PlatformKeyboardEvent.h"
 #include "PlatformMouseEvent.h"
 #include "PluginContainerSymbian.h"
-#include "PluginDebug.h"
 #include "PluginMainThreadScheduler.h"
 #include "PluginPackage.h"
 #include "QWebPageClient.h"

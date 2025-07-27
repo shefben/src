@@ -30,13 +30,16 @@
 #include "DocumentLoader.h"
 #include "Frame.h"
 #include "FrameLoader.h"
-#include "PluginDebug.h"
 #include "ResourceLoadScheduler.h"
 #include "SharedBuffer.h"
 #include "SubresourceLoader.h"
 #include <wtf/StringExtras.h>
 #include <wtf/text/CString.h>
 #include <wtf/text/StringConcatenate.h>
+
+#ifndef LOG_NPERROR
+#define LOG_NPERROR(x) do { } while (0)
+#endif
 
 // We use -2 here because some plugins like to return -1 to indicate error
 // and this way we won't clash with them.

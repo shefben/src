@@ -64,7 +64,6 @@
 #endif
 
 #if PLATFORM(MAC)
-#include "ProfilerServer.h"
 #include <CoreFoundation/CoreFoundation.h>
 #endif
 
@@ -208,10 +207,6 @@ JSGlobalData::JSGlobalData(GlobalDataType globalDataType, ThreadStackType thread
 #endif
 
     wtfThreadData().setCurrentIdentifierTable(existingEntryIdentifierTable);
-
-#if PLATFORM(MAC)
-    startProfilerServerIfNeeded();
-#endif
 #if ENABLE(JIT) && ENABLE(INTERPRETER)
 #if USE(CF)
     CFStringRef canUseJITKey = CFStringCreateWithCString(0 , "JavaScriptCoreUseJIT", kCFStringEncodingMacRoman);

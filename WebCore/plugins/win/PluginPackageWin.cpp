@@ -31,12 +31,15 @@
 
 #include "MIMETypeRegistry.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include "Timer.h"
 #include "npruntime_impl.h"
 #include <string.h>
 #include <wtf/OwnArrayPtr.h>
 #include <wtf/text/CString.h>
+
+#ifndef LOG_NPERROR
+#define LOG_NPERROR(x) do { } while (0)
+#endif
 #include <shlwapi.h>
 
 namespace WebCore {
