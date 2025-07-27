@@ -331,98 +331,6 @@
 						</File>
 					</Filter>
 				</Filter>
-				<Filter
-					Name="kd"
-					>
-					<Filter
-						Name="api"
-						>
-						<File
-							RelativePath="..\WebKit\kd\Api\KdGuiApi.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\Api\KdGuiApi.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\Api\KWebElement.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\Api\KWebPage.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\Api\KWebPage.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\Api\KWebSettings.h"
-							>
-						</File>
-					</Filter>
-					<Filter
-						Name="WebCoreSupport"
-						>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KChromeClient.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KChromeClient.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KContextMenuClient.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KContextMenuClient.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KDragClient.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KDragClient.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KEditCommand.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KEditCommand.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KEditorClient.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KEditorClient.h"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KFrameLoaderClient.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KFrameLoaderClient.H"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KFrameNetworkingContext.cpp"
-							>
-						</File>
-						<File
-							RelativePath="..\WebKit\kd\WebCoreSupport\KFrameNetworkingContext.h"
-							>
-						</File>
-					</Filter>
-				</Filter>
 			</Filter>
 			<Filter
 				Name="WebCore"
@@ -5933,16 +5841,7 @@
 							RelativePath="..\WebCore\platform\qt\ScrollViewQt.cpp"
 							>
 						</File>
-					</Filter>
-					<Filter
-						Name="kd"
-						>
-						<File
-							RelativePath="..\WebCore\platform\kd\SharedTimerKd.cpp"
-							>
-						</File>
-					</Filter>
-					<Filter
+					</Filter>					<Filter
 						Name="mock"
 						>
 						<File
