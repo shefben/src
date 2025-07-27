@@ -1256,6 +1256,15 @@
 #ifndef ENABLE_MEDIA_STATISTICS
 #define ENABLE_MEDIA_STATISTICS 0
 #endif
+#ifndef ENABLE_XPATH
+#define ENABLE_XPATH 0
+#endif
+#ifndef ENABLE_XSLT
+#define ENABLE_XSLT 0
+#endif
+#ifndef ENABLE_XHR_RESPONSE_BLOB
+#define ENABLE_XHR_RESPONSE_BLOB 0
+#endif
 
 #ifndef ENABLE_SVG
 #define ENABLE_SVG 0
