@@ -30,7 +30,7 @@
 #include "AccessibilityTableHeaderContainer.h"
 
 #include "AccessibilityTable.h"
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 
 using namespace std;
 

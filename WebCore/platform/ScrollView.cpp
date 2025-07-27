@@ -26,7 +26,7 @@
 #include "config.h"
 #include "ScrollView.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "GraphicsContext.h"
 #include "GraphicsLayer.h"
 #include "HostWindow.h"

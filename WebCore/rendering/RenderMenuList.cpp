@@ -25,7 +25,7 @@
 #include "config.h"
 #include "RenderMenuList.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Chrome.h"
 #include "CSSStyleSelector.h"
 #include "Frame.h"

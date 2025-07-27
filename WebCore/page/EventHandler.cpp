@@ -27,7 +27,7 @@
 #include "config.h"
 #include "EventHandler.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CachedImage.h"
 #include "Chrome.h"
 #include "ChromeClient.h"

@@ -27,7 +27,7 @@
 #include "config.h"
 #include "HTMLSelectElement.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Attribute.h"
 #include "EventNames.h"
 #include "HTMLNames.h"

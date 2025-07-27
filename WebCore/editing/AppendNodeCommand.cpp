@@ -26,7 +26,7 @@
 #include "config.h"
 #include "AppendNodeCommand.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "htmlediting.h"
 
 namespace WebCore {

@@ -30,7 +30,7 @@
 #include "AccessibilityObject.h"
 
 #include "AccessibilityRenderObject.h"
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CharacterNames.h"
 #include "FloatRect.h"
 #include "FocusController.h"

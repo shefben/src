@@ -32,7 +32,7 @@
 
 #include "config.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "DNS.h"
 #include "CString.h"
 #include "CachedResource.h"

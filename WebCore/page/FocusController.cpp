@@ -27,7 +27,7 @@
 #include "config.h"
 #include "FocusController.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Chrome.h"
 #include "Document.h"
 #include "Editor.h"

@@ -25,7 +25,7 @@
 #include "config.h"
 #include "RenderText.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "EllipsisBox.h"
 #include "FloatQuad.h"
 #include "FontTranscoder.h"

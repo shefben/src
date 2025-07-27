@@ -34,8 +34,7 @@
 #include <algorithm>
 
 // FIXME: The following #includes are a layering violation and should be removed.
-#include "AXObjectCache.h"
-#include "AccessibilityScrollbar.h"
+#include "AXObjectCacheStub.h"
 #include "Document.h"
 #include "EventHandler.h"
 #include "Frame.h"

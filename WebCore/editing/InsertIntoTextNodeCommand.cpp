@@ -26,7 +26,7 @@
 #include "config.h"
 #include "InsertIntoTextNodeCommand.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "RenderText.h"
 #include "Settings.h"
 #include "Text.h"

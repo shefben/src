@@ -27,7 +27,7 @@
 #include "config.h"
 #include "RenderObject.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "CSSStyleSelector.h"
 #include "Chrome.h"
 #include "ContentData.h"

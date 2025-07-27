@@ -25,7 +25,7 @@
 #include "config.h"
 #include "Node.h"
 
-#include "AXObjectCache.h"
+#include "AXObjectCacheStub.h"
 #include "Attr.h"
 #include "Attribute.h"
 #include "CSSParser.h"
