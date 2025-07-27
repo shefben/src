@@ -41,8 +41,6 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/MP"
 				Optimization="0"
-				AdditionalIncludeDirectories="&quot;../WebCore/platform/image-encoders&quot;;&quot;../WebCore/platform/image-decoders/ico&quot;;&quot;../WebCore/platform/image-decoders/png&quot;;&quot;../WebCore/platform/image-decoders/bmp&quot;;&quot;../WebCore/platform/image-decoders/gif&quot;;../graphics/;../KdToolCore/;../KdToolCore/libxml/include;../graphics/skia;../graphics/skia/gpu/include;../graphics/skia/include;../graphics/skia/include/gpu;../graphics/skia/include/config;../graphics/skia/include/core;../graphics/skia/include/effects;../graphics/skia/include/ports;../graphics/libpng;../KdToolCore/zlib;&quot;../../libxml2-2.7.8/include&quot;;../include;../WebCore/platform/client;../WebCore/platform/client/util;../WebCore/platform/skia;../../harfbuzz/src;../../libpng;../../libmng;../../zlib;../../libjpeg;../graphics;../JavaScriptCore/yarr;../JavaScriptCore/wtf/qt;../JavaScriptCore/icu;../WebCore/WebSockets;../WebKit/kd/;../WebKit/kd/Api;../WebCore/testing/js;../WebKit/kd/WebCoreSupport;../WebCore/workers;../WebCore/loader/appcache;../WebCore/fileapi;../WebCore/notifications;../WebCore/html;../WebCore/html/shadow;../WebCore/accessibility;../WebCore/platform/win;../WebCore/platform/graphics/win;../WebCore/platform/network/kd;../WebCore/rendering/svg;../WebCore/svg/properties;../WebCore/tmp/moc/debug_shared;../WebCore/platform/qt;../WebCore/platform/graphics/filters/arm;../WebCore/platform/graphics/gpu;../WebCore/loader/icon;../WebCore/loader/archive;../WebCore/platform/mock;../WebCore/loader/cache;../WebCore/bindings/generic;../WebCore/platform/text/transcoder;../WebCore/html/parser;../JavaScriptCore/heap;../JavaScriptCore/wtf/text;../JavaScriptCore/tmp/moc/debug_shared;../JavaScriptCore/wtf/unicode;../JavaScriptCore/API;../JavaScriptCore/assembler;../JavaScriptCore/bytecode;../JavaScriptCore/bytecompiler;../JavaScriptCore/debugger;../JavaScriptCore/ForwardingHeaders;../JavaScriptCore/generated;../JavaScriptCore/interpreter;../JavaScriptCore/jit;&quot;../JavaScriptCore/os-win32&quot;;../JavaScriptCore/parser;../JavaScriptCore/pcre;../JavaScriptCore/profiler;../JavaScriptCore/runtime;../JavaScriptCore/wrec;../JavaScriptCore/wtf;../WebCore/bindings;../WebCore/bridge/jsc;../WebCore/bridge/jni;../WebCore/bridge/c;../WebCore/bridge/qt;../WebKit/qt/Api;../WebKit/qt/WebCoreSupport;&quot;../WebCore/platform/image-decoders&quot;;../WebCore/page/win;../WebCore/page/animation;../WebCore/svg/graphics/qt;../WebCore/svg/graphics/filters;../WebCore/svg/graphics;../;../WebKit/qt/tmp/moc/debug_shared;../WebCore/svg/animation;../WebCore/bridge;../WebCore/bindings/js;../WebCore/plugins;../WebCore/history;../WebCore/inspector;../WebCore/svg;../WebCore/page;../WebCore/generated;../WebCore/css;../WebCore/editing;../WebCore/platform;../WebCore/xml;../WebCore/dom;../WebCore/loader;../WebCore/platform/animation;../WebCore/platform/text;../WebCore/platform/text/win;../WebCore/platform/text/qt;../WebCore/platform/network;../WebCore/platform/network/qt;../WebCore/platform/graphics/transforms;../WebCore/platform/graphics;../WebCore/platform/graphics/skia;../WebCore/platform/graphics/qt;../WebCore/platform/graphics/filters;../WebCore/rendering;../WebCore/rendering/style;../../../../include;../WebCore;../JavaScriptCore;../../../corelib/tools;../../../corelib/global;../../../../include/QtCore;../WebCore/html/canvas;../../phonon/phonon"
-				PreprocessorDefinitions="WIN32;_DEBUG;OS_WIN=1;QT_NO_CURSOR=1;ENABLE_WTF_MALLOC_VALIDATION=1;ENABLE_ACCELERATED_2D_CANVAS=0;WTF_USE_CF=0;_WINDOWS;UNICODE;_HAS_TR1=0;_USE_MATH_DEFINES;BUILD_WEBKIT;QT_NO_DATASTREAM=1;WTF_PLATFORM_QT=1;WTF_PLATFORM_WIN=1;WTF_OS_WINDOWS=1;WTF_USE_SKIA=1;WTF_USE_QT4_UNICODE=1;USE_SYSTEM_MALLOC;ENABLE_OFFLINE_WEB_APPLICATIONS=0;ENABLE_ICONDATABASE=0;ENABLE_DASHBOARD_SUPPORT=0;ENABLE_XPATH=1;ENABLE_WML=0;ENABLE_SVG=0;ENABLE_SVG_FONTS=0;ENABLE_SVG_FILTERS=0;ENABLE_SVG_FOREIGN_OBJECT=0;ENABLE_SVG_ANIMATION=0;ENABLE_SVG_AS_IMAGE=0;ENABLE_SVG_USE=0;ENABLE_FILTERS=1;ENABLE_VIDEO=0;ENABLE_NETSCAPE_PLUGIN_API=1;ENABLE_JSC_MULTIPLE_THREADS=0;ENABLE_SINGLE_THREADED=1;WTF_USE_JAVASCRIPTCORE_BINDINGS=1;WTF_CHANGES=1;BUILDING_JavaScriptCore;BUILDING_WTF;BUILDING_WEBKIT_;QNAME_DEFAULT_CONSTRUCTOR;QT_NO_TEXTEDIT=1;QT_NO_GRAPHICSVIEW=1;QT_NO_CUPS=1;QT_NO_ACTION=1;QT_NO_DRAGANDDROP=1;QT_NO_TABLETEVENT=1;QT_NO_TEXTCONTROL=1;QT_NO_TEXTBROWSER=1;QT_NO_PRINTER=1;QT_NO_CSSPARSER=1;QT_NO_TEXTHTMLPARSER=1;QT_NODLL=1;QT_NO_QOBJECT=1;QT_NO_LIBRARY=1;QT_NO_GESTURES=1;QT_NO_TEMPORARYFILE=1;QT_NO_UNDOCOMMAND=1;WEBKIT_DLL=1"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="3"
@@ -129,8 +127,6 @@
 				Name="VCCLCompilerTool"
 				Optimization="1"
 				FavorSizeOrSpeed="2"
-				AdditionalIncludeDirectories="&quot;../WebCore/platform/image-encoders&quot;;&quot;../WebCore/platform/image-decoders/ico&quot;;&quot;../WebCore/platform/image-decoders/png&quot;;&quot;../WebCore/platform/image-decoders/bmp&quot;;&quot;../WebCore/platform/image-decoders/gif&quot;;../graphics/;../KdToolCore/libxml/include;../KdToolCore;../graphics/skia;../graphics/skia/gpu/include;../graphics/skia/include;../graphics/skia/include/gpu;../graphics/skia/include/config;../graphics/skia/include/core;../graphics/skia/include/effects;../graphics/skia/include/ports;../graphics/libpng;../KdToolCore/zlib;&quot;../../libxml2-2.7.8/include&quot;;../include;../WebCore/platform/client;../WebCore/platform/client/util;../WebCore/platform/skia;../../harfbuzz/src;../../libpng;../../libmng;../../zlib;../../libjpeg;../graphics;../JavaScriptCore/yarr;../JavaScriptCore/wtf/qt;../JavaScriptCore/icu;../WebCore/WebSockets;../WebKit/kd/;../WebKit/kd/Api;../WebCore/testing/js;../WebKit/kd/WebCoreSupport;../WebCore/workers;../WebCore/loader/appcache;../WebCore/fileapi;../WebCore/notifications;../WebCore/html;../WebCore/html/shadow;../WebCore/accessibility;../WebCore/platform/win;../WebCore/platform/graphics/win;../WebCore/platform/network/kd;../WebCore/rendering/svg;../WebCore/svg/properties;../WebCore/tmp/moc/debug_shared;../WebCore/platform/qt;../WebCore/platform/graphics/filters/arm;../WebCore/platform/graphics/gpu;../WebCore/loader/icon;../WebCore/loader/archive;../WebCore/platform/mock;../WebCore/loader/cache;../WebCore/bindings/generic;../WebCore/platform/text/transcoder;../WebCore/html/parser;../JavaScriptCore/heap;../JavaScriptCore/wtf/text;../JavaScriptCore/tmp/moc/debug_shared;../JavaScriptCore/wtf/unicode;../JavaScriptCore/API;../JavaScriptCore/assembler;../JavaScriptCore/bytecode;../JavaScriptCore/bytecompiler;../JavaScriptCore/debugger;../JavaScriptCore/ForwardingHeaders;../JavaScriptCore/generated;../JavaScriptCore/interpreter;../JavaScriptCore/jit;&quot;../JavaScriptCore/os-win32&quot;;../JavaScriptCore/parser;../JavaScriptCore/pcre;../JavaScriptCore/profiler;../JavaScriptCore/runtime;../JavaScriptCore/wrec;../JavaScriptCore/wtf;../WebCore/bindings;../WebCore/bridge/jsc;../WebCore/bridge/jni;../WebCore/bridge/c;../WebCore/bridge/qt;../WebKit/qt/Api;../WebKit/qt/WebCoreSupport;&quot;../WebCore/platform/image-decoders&quot;;../WebCore/page/win;../WebCore/page/animation;../WebCore/svg/graphics/qt;../WebCore/svg/graphics/filters;../WebCore/svg/graphics;../;../WebKit/qt/tmp/moc/debug_shared;../WebCore/svg/animation;../WebCore/bridge;../WebCore/bindings/js;../WebCore/plugins;../WebCore/history;../WebCore/inspector;../WebCore/svg;../WebCore/page;../WebCore/generated;../WebCore/css;../WebCore/editing;../WebCore/platform;../WebCore/xml;../WebCore/dom;../WebCore/loader;../WebCore/platform/animation;../WebCore/platform/text;../WebCore/platform/text/win;../WebCore/platform/text/qt;../WebCore/platform/network;../WebCore/platform/network/qt;../WebCore/platform/graphics/transforms;../WebCore/platform/graphics;../WebCore/platform/graphics/skia;../WebCore/platform/graphics/qt;../WebCore/platform/graphics/filters;../WebCore/rendering;../WebCore/rendering/style;../../../../include;../WebCore;../JavaScriptCore;../../../corelib/tools;../../../corelib/global;../../../../include/QtCore;../WebCore/html/canvas;../../phonon/phonon"
-				PreprocessorDefinitions="NDEBUG;WIN32;OS_WIN=1;QT_NO_CURSOR=1;ENABLE_ACCELERATED_2D_CANVAS=0;WTF_USE_CF=0;_WINDOWS;UNICODE;_HAS_TR1=0;_USE_MATH_DEFINES;BUILD_WEBKIT;QT_NO_DATASTREAM=1;WTF_PLATFORM_QT=1;WTF_PLATFORM_WIN=1;WTF_OS_WINDOWS=1;WTF_USE_SKIA=1;WTF_USE_QT4_UNICODE=1;USE_SYSTEM_MALLOC;ENABLE_OFFLINE_WEB_APPLICATIONS=0;ENABLE_ICONDATABASE=0;ENABLE_DASHBOARD_SUPPORT=0;ENABLE_XPATH=1;ENABLE_WML=0;ENABLE_SVG=0;ENABLE_SVG_FONTS=0;ENABLE_SVG_FILTERS=0;ENABLE_SVG_FOREIGN_OBJECT=0;ENABLE_SVG_ANIMATION=0;ENABLE_SVG_AS_IMAGE=0;ENABLE_SVG_USE=0;ENABLE_FILTERS=1;ENABLE_VIDEO=0;ENABLE_NETSCAPE_PLUGIN_API=1;ENABLE_JSC_MULTIPLE_THREADS=0;ENABLE_SINGLE_THREADED=1;WTF_USE_JAVASCRIPTCORE_BINDINGS=1;WTF_CHANGES=1;BUILDING_JavaScriptCore;BUILDING_WTF;BUILDING_WEBKIT_;QNAME_DEFAULT_CONSTRUCTOR;QT_NO_TEXTEDIT=1;QT_NO_GRAPHICSVIEW=1;QT_NO_CUPS=1;QT_NO_ACTION=1;QT_NO_DRAGANDDROP=1;QT_NO_TABLETEVENT=1;QT_NO_TEXTCONTROL=1;QT_NO_TEXTBROWSER=1;QT_NO_PRINTER=1;QT_NO_CSSPARSER=1;QT_NO_TEXTHTMLPARSER=1;QT_NODLL=1;QT_NO_QOBJECT=1;QT_NO_LIBRARY=1;QT_NO_GESTURES=1;QT_NO_TEMPORARYFILE=1;QT_NO_UNDOCOMMAND=1;WEBKIT_DLL=1"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
 				BufferSecurityCheck="false"
@@ -14733,157 +14729,119 @@
 				</Filter>
 			</Filter>
 			<Filter
-				Name="JavaScriptCore"
 				>
 				<Filter
 					Name="API"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\API\APICast.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\APIShims.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JavaScript.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JavaScriptCore.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSBase.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSBase.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSBasePrivate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackFunction.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackFunction.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSCallbackObjectFunctions.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSClassRef.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSClassRef.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSContextRef.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSContextRef.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSContextRefPrivate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSObjectRef.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSObjectRef.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSObjectRefPrivate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSProfilerPrivate.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSProfilerPrivate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSRetainPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSStringRef.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSStringRef.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSStringRefBSTR.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSStringRefCF.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSValueRef.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSValueRef.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSWeakObjectMapRefInternal.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSWeakObjectMapRefPrivate.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\JSWeakObjectMapRefPrivate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\OpaqueJSString.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\OpaqueJSString.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\API\WebKitAvailability.h"
 						>
 					</File>
 				</Filter>
@@ -14891,15 +14849,12 @@
 					Name="assembler"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\assembler\AssemblerBuffer.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\assembler\MacroAssembler.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\assembler\X86Assembler.h"
 						>
 					</File>
 				</Filter>
@@ -14907,51 +14862,39 @@
 					Name="bytecode"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\CodeBlock.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\CodeBlock.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\EvalCodeCache.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\Instruction.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\JumpTable.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\JumpTable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\Opcode.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\Opcode.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\SamplingTool.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\SamplingTool.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\StructureStubInfo.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecode\StructureStubInfo.h"
 						>
 					</File>
 				</Filter>
@@ -14959,31 +14902,24 @@
 					Name="bytecompiler"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\BytecodeGenerator.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\BytecodeGenerator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\Label.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\LabelScope.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\NodesCodegen.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\RegisterID.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\bytecompiler\SegmentedVector.h"
 						>
 					</File>
 				</Filter>
@@ -14991,19 +14927,15 @@
 					Name="debugger"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\debugger\Debugger.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\debugger\Debugger.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\debugger\DebuggerCallFrame.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\debugger\DebuggerCallFrame.h"
 						>
 					</File>
 				</Filter>
@@ -15011,54 +14943,41 @@
 					Name="ForwardingHeaders"
 					>
 					<Filter
-						Name="JavaScriptCore"
 						>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\APICast.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JavaScript.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JavaScriptCore.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSBase.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSContextRef.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSObjectRef.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSRetainPtr.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSStringRef.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSStringRefCF.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\JSValueRef.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\OpaqueJSString.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\ForwardingHeaders\JavaScriptCore\WebKitAvailability.h"
 							>
 						</File>
 					</Filter>
@@ -15067,43 +14986,33 @@
 					Name="generated"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\generated\ArrayPrototype.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\chartables.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\DatePrototype.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\Grammar.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\Lexer.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\MathObject.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\NumberConstructor.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\RegExpConstructor.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\RegExpObject.lut.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\generated\StringPrototype.lut.h"
 						>
 					</File>
 				</Filter>
@@ -15111,31 +15020,24 @@
 					Name="interpreter"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\CallFrame.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\CallFrame.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\Interpreter.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\Interpreter.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\Register.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\RegisterFile.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\interpreter\RegisterFile.h"
 						>
 					</File>
 				</Filter>
@@ -15143,91 +15045,69 @@
 					Name="jit"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\jit\ExecutableAllocator.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\ExecutableAllocator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\ExecutableAllocatorFixedVMPool.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JIT.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JIT.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITArithmetic.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITArithmetic32_64.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITCall.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITCall32_64.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITCode.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITInlineMethods.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITOpcodes.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITOpcodes32_64.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITPropertyAccess.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITPropertyAccess32_64.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITStubCall.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITStubs.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JITStubs.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\JSInterfaceJIT.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\SpecializedThunkJIT.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\ThunkGenerators.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\jit\ThunkGenerators.h"
 						>
 					</File>
 				</Filter>
@@ -15235,11 +15115,9 @@
 					Name="os-win32"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\os-win32\stdbool.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\os-win32\stdint.h"
 						>
 					</File>
 				</Filter>
@@ -15247,87 +15125,66 @@
 					Name="parser"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\parser\ASTBuilder.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\JSParser.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\JSParser.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Keywords.table"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Lexer.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Lexer.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\NodeConstructors.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\NodeInfo.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Nodes.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Nodes.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Parser.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\Parser.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\ParserArena.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\ParserArena.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\ResultType.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SourceCode.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SourceProvider.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SourceProviderCache.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SourceProviderCache.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SourceProviderCacheItem.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\parser\SyntaxChecker.h"
 						>
 					</File>
 				</Filter>
@@ -15335,35 +15192,27 @@
 					Name="pcre"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_compile.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_exec.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_internal.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_tables.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_ucp_searchfuncs.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\pcre_xclass.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\pcre\ucpinternal.h"
 						>
 					</File>
 				</Filter>
@@ -15371,43 +15220,33 @@
 					Name="profiler"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\CallIdentifier.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\Profile.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\Profile.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\ProfileGenerator.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\ProfileGenerator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\ProfileNode.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\ProfileNode.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\Profiler.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\Profiler.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\profiler\ProfilerServer.h"
 						>
 					</File>
 				</Filter>
@@ -15415,759 +15254,570 @@
 					Name="runtime"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArgList.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArgList.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Arguments.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Arguments.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArrayConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArrayConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArrayPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ArrayPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BatchedTransitionOptimizer.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\BooleanPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\CachedTranscendentalFunction.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\CallData.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\CallData.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ClassInfo.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\CommonIdentifiers.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\CommonIdentifiers.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Completion.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Completion.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ConstructData.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ConstructData.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateConversion.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateConversion.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateInstance.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateInstance.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DateInstanceCache.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DatePrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\DatePrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Error.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Error.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorInstance.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorInstance.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ErrorPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ExceptionHelpers.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ExceptionHelpers.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Executable.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Executable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\FunctionConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\FunctionConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\FunctionPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\FunctionPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\GCActivityCallback.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\GCActivityCallback.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\GetterSetter.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\GetterSetter.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Identifier.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Identifier.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\InitializeThreading.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\InitializeThreading.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\InternalFunction.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\InternalFunction.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSActivation.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSActivation.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSAPIValueWrapper.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSAPIValueWrapper.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSArray.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSByteArray.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSByteArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSCell.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSCell.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSChunk.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSChunk.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSFunction.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSFunction.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalData.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalData.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalObjectFunctions.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSGlobalObjectFunctions.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSLock.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSLock.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSNotAnObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSNotAnObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSObjectWithGlobalObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSObjectWithGlobalObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSONObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSONObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSPropertyNameIterator.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSPropertyNameIterator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSStaticScopeObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSStaticScopeObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSString.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSString.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSStringBuilder.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSType.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSTypeInfo.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSValue.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSValue.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSValueInlineMethods.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSVariableObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSVariableObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSWrapperObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSWrapperObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSZombie.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\JSZombie.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\LiteralParser.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\LiteralParser.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Lookup.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Lookup.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\MathObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\MathObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\MemoryStatistics.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\MemoryStatistics.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NativeErrorConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NativeErrorConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NativeErrorPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NativeErrorPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumberPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\NumericStrings.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ObjectConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ObjectConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ObjectPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ObjectPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Operations.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Operations.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertyDescriptor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertyDescriptor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertyMapHashTable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertyNameArray.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertyNameArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertySlot.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PropertySlot.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Protect.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\PutPropertySlot.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExp.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExp.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpCache.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpCache.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpKey.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpMatchesArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RegExpPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RopeImpl.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\RopeImpl.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ScopeChain.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ScopeChain.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\ScopeChainMark.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\SmallStrings.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\SmallStrings.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StrictEvalActivation.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StrictEvalActivation.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringConstructor.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringConstructor.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringObject.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringObject.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringObjectThatMasqueradesAsUndefined.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringPrototype.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringPrototype.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringRecursionChecker.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StringRecursionChecker.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Structure.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Structure.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StructureChain.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StructureChain.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\StructureTransitionTable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\SymbolTable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Terminator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\TimeoutChecker.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\TimeoutChecker.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\Tracing.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\UString.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\UString.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\UStringBuilder.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\UStringConcatenate.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\WeakGCMap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\WeakRandom.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\runtime\WriteBarrier.h"
 						>
 					</File>
 				</Filter>
@@ -16175,566 +15825,426 @@
 					Name="wtf"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Alignment.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\AlwaysInline.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ASCIICType.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Assertions.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Assertions.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Atomics.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\AVLTree.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Bitmap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\BlockStack.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\BloomFilter.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\BumpPointerAllocator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ByteArray.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ByteArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Complex.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\CrossThreadRefCounted.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\CryptographicallyRandomNumber.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\CryptographicallyRandomNumber.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\CurrentTime.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\CurrentTime.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DateMath.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DateMath.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DecimalNumber.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DecimalNumber.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Decoder.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Deque.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DisallowCType.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DoublyLinkedList.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\dtoa.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\dtoa.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DynamicAnnotations.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\DynamicAnnotations.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Encoder.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ExportMacros.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\FastAllocBase.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\FastMalloc.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\FastMalloc.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\FixedArray.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Forward.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\GetPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashCountedSet.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashFunctions.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashIterators.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashMap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashSet.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashTable.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashTable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HashTraits.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\HexNumber.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ListHashSet.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ListRefPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Locker.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MainThread.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MainThread.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MallocZoneSupport.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MathExtras.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MD5.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MD5.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\MessageQueue.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Noncopyable.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\NonCopyingSort.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\NotFound.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\NullPtr.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\NullPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OSAllocator.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OSAllocatorWin.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OSRandomSource.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OSRandomSource.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OwnArrayPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OwnFastMallocPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OwnPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\OwnPtrCommon.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageAllocation.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageAllocationAligned.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageAllocationAligned.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageAllocatorSymbian.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageBlock.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageBlock.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PageReservation.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ParallelJobs.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ParallelJobsGeneric.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ParallelJobsGeneric.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ParallelJobsLibdispatch.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ParallelJobsOpenMP.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PassOwnArrayPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PassOwnPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PassRefPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PassTraits.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Platform.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\PossiblyNull.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RandomNumber.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RandomNumber.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RandomNumberSeed.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RefCounted.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RefCountedLeakCounter.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RefCountedLeakCounter.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RefPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RefPtrHashMap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\RetainPtr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SegmentedVector.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SentinelLinkedList.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SHA1.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SHA1.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SinglyLinkedList.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\SizeLimits.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StackBounds.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StackBounds.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StaticConstructors.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StdLibExtras.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StringExtras.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StringExtras.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\StringHasher.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TCPackedCache.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TCPageMap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TCSpinLock.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TCSystemAlloc.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TCSystemAlloc.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadFunctionInvocation.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadIdentifierDataPthreads.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadIdentifierDataPthreads.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Threading.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Threading.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadingNone.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadingPrimitives.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadingPthreads.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadSafeRefCounted.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadSpecific.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ThreadSpecificWin.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TypeTraits.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\TypeTraits.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\UnusedParam.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\ValueCheck.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\Vector.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\VectorTraits.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\VMTags.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\wtf.pri"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\WTFThreadData.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\wtf\WTFThreadData.h"
 						>
 					</File>
 					<Filter
 						Name="qt"
 						>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\qt\MainThreadQt.cpp"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\qt\QChar.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\qt\ThreadingQt.cpp"
 							>
 						</File>
 					</Filter>
@@ -16742,30 +16252,24 @@
 						Name="unicode"
 						>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\unicode\Collator.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\unicode\CollatorDefault.cpp"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\unicode\Unicode.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\unicode\UTF8.cpp"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\unicode\UTF8.h"
 							>
 						</File>
 						<Filter
 							Name="icu"
 							>
 							<File
-								RelativePath="..\JavaScriptCore\wtf\unicode\icu\UnicodeIcu.h"
 								>
 							</File>
 						</Filter>
@@ -16773,11 +16277,9 @@
 							Name="qt4"
 							>
 							<File
-								RelativePath="..\JavaScriptCore\wtf\unicode\qt4\UnicodeQt4.cpp"
 								>
 							</File>
 							<File
-								RelativePath="..\JavaScriptCore\wtf\unicode\qt4\UnicodeQt4.h"
 								>
 							</File>
 						</Filter>
@@ -16786,7 +16288,6 @@
 						Name="text"
 						>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\AtomicString.cpp"
 							>
 							<FileConfiguration
 								Name="Debug|Win32"
@@ -16808,19 +16309,15 @@
 							</FileConfiguration>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\AtomicString.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\AtomicStringHash.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\AtomicStringImpl.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\CString.cpp"
 							>
 							<FileConfiguration
 								Name="Debug|Win32"
@@ -16842,15 +16339,12 @@
 							</FileConfiguration>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\CString.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringBuffer.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringBuilder.cpp"
 							>
 							<FileConfiguration
 								Name="Debug|Win32"
@@ -16872,19 +16366,15 @@
 							</FileConfiguration>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringBuilder.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringConcatenate.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringHash.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringImpl.cpp"
 							>
 							<FileConfiguration
 								Name="Debug|Win32"
@@ -16906,27 +16396,21 @@
 							</FileConfiguration>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringImpl.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringImplBase.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\StringStatics.cpp"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\TextPosition.h"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\WTFString.cpp"
 							>
 						</File>
 						<File
-							RelativePath="..\JavaScriptCore\wtf\text\WTFString.h"
 							>
 						</File>
 					</Filter>
@@ -16935,99 +16419,75 @@
 					Name="heap"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\heap\ConservativeRoots.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\ConservativeRoots.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Handle.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\HandleHeap.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\HandleHeap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\HandleStack.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\HandleStack.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Heap.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Heap.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Local.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\LocalScope.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MachineStackMarker.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MachineStackMarker.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkedBlock.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkedBlock.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkedSpace.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkedSpace.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkStack.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkStack.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkStackPosix.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkStackSymbian.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\MarkStackWin.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Strong.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\heap\Weak.h"
 						>
 					</File>
 				</Filter>
@@ -17035,43 +16495,33 @@
 					Name="yarr"
 					>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\Yarr.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrInterpreter.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrInterpreter.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrJIT.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrJIT.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrParser.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrPattern.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrPattern.h"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrSyntaxChecker.cpp"
 						>
 					</File>
 					<File
-						RelativePath="..\JavaScriptCore\yarr\YarrSyntaxChecker.h"
 						>
 					</File>
 				</Filter>
