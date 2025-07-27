@@ -1227,6 +1227,19 @@
 #define WTF_USE_UNIX_DOMAIN_SOCKETS 1
 #endif
 
+#ifndef ENABLE_VIDEO
+#define ENABLE_VIDEO 0
+#endif
+#ifndef ENABLE_WEB_AUDIO
+#define ENABLE_WEB_AUDIO 0
+#endif
+#ifndef ENABLE_MEDIA_STREAM
+#define ENABLE_MEDIA_STREAM 0
+#endif
+#ifndef ENABLE_MEDIA_STATISTICS
+#define ENABLE_MEDIA_STATISTICS 0
+#endif
+
 #if defined(__cplusplus)
 
 typedef unsigned char uchar;
