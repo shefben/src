@@ -37,7 +37,7 @@
 #include <usp10.h>
 #include <map>
 
-#include <unicode/uchar.h>
+#include <QtCore/qchar.h>
 #include <wtf/Vector.h>
 
 class UniscribeTest_TooBig_Test;  // A gunit test for UniscribeHelper.

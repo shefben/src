@@ -29,7 +29,7 @@
 #include <wtf/MathExtras.h>
 
 #if USE(ICU_UNICODE)
-#include <unicode/unorm.h>
+#include <QtCore/QString>
 #endif
 
 using namespace WTF;

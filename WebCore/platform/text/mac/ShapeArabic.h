@@ -28,7 +28,7 @@
 
 #if USE(ATSUI)
 
-#include <unicode/ushape.h>
+#include <QtCore/QString>
 
 #ifdef __cplusplus
 extern "C" {

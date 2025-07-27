@@ -32,7 +32,7 @@
 
 #if !USE(CF) && USE(ICU_UNICODE)
 #include "PlatformString.h"
-#include <unicode/uset.h>
+#include <QtCore/QSet>
 #include <wtf/Assertions.h>
 
 namespace WebCore {

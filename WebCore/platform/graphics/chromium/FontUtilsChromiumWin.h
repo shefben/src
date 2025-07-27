@@ -41,7 +41,7 @@
 #include <windows.h>
 
 #include "FontDescription.h"
-#include <unicode/uscript.h>
+#include <QtCore/QLocale>
 
 namespace WebCore {
 

@@ -35,8 +35,8 @@
 
 #include "PlatformString.h"
 #include "UniscribeHelper.h"
-#include <unicode/locid.h>
-#include <unicode/uchar.h>
+#include <QtCore/QLocale>
+#include <QtCore/qchar.h>
 #include <wtf/HashMap.h>
 #include <wtf/text/StringHash.h>
 

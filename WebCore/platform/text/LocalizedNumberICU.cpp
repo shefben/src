@@ -32,8 +32,8 @@
 #include "LocalizedNumber.h"
 
 #include <limits>
-#include <unicode/numfmt.h>
-#include <unicode/parsepos.h>
+#include <QtCore/QLocale>
+#include <QtCore/QLocale>
 #include <wtf/MathExtras.h>
 #include <wtf/PassOwnPtr.h>
 

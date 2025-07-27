@@ -24,7 +24,7 @@
 
 #include "PlatformString.h"
 #include "TextBreakIteratorInternalICU.h"
-#include <unicode/ubrk.h>
+#include <QtCore/QTextBoundaryFinder>
 #include <wtf/Assertions.h>
 
 using namespace std;

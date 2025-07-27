@@ -29,7 +29,7 @@
 
 #include "TextCodec.h"
 #include "TextEncoding.h"
-#include <unicode/utypes.h>
+#include <QtCore/QTextCodec>
 
 typedef struct UConverter UConverter;
 

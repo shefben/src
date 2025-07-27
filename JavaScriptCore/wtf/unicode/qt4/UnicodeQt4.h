@@ -33,7 +33,7 @@
 
 #include <stdint.h>
 #if USE(QT_ICU_TEXT_BREAKING)
-#include <unicode/ubrk.h>
+#include <QtCore/QTextBoundaryFinder>
 #endif
 
 QT_BEGIN_NAMESPACE

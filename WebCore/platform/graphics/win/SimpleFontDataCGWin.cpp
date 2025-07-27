@@ -37,8 +37,8 @@
 #include <ApplicationServices/ApplicationServices.h>
 #include <WebKitSystemInterface/WebKitSystemInterface.h>
 #include <mlang.h>
-#include <unicode/uchar.h>
-#include <unicode/unorm.h>
+#include <QtCore/qchar.h>
+#include <QtCore/QString>
 #include <winsock2.h>
 #include <wtf/MathExtras.h>
 #include <wtf/RetainPtr.h>

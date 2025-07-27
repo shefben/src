@@ -32,7 +32,7 @@
   'variables': {
     'javascriptcore_include_dirs': [
       '<(project_dir)',
-      '<(project_dir)/icu',
+      
     ],
   },
   'target_defaults': {
@@ -64,7 +64,6 @@
         '<@(javascriptcore_derived_source_files)',
         '$(SDKROOT)/System/Library/Frameworks/CoreFoundation.framework',
         '$(SDKROOT)/System/Library/Frameworks/Foundation.framework',
-        '/usr/lib/libicucore.dylib',
         '/usr/lib/libobjc.dylib',
       ],
       'mac_framework_headers': [

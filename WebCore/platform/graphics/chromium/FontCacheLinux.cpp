@@ -45,7 +45,7 @@
 #include "SkTypeface.h"
 #include "SkUtils.h"
 
-#include <unicode/utf16.h>
+#include <QtCore/qstring.h>
 #include <wtf/Assertions.h>
 
 namespace WebCore {

@@ -38,7 +38,6 @@ SOURCES += \
     wtf/text/StringStatics.cpp \
     wtf/text/WTFString.cpp \
     wtf/unicode/CollatorDefault.cpp \
-    wtf/unicode/icu/CollatorICU.cpp \
     wtf/unicode/UTF8.cpp
 
 linux-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {

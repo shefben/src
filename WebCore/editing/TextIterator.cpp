@@ -46,7 +46,7 @@
 
 #if USE(ICU_UNICODE) && !UCONFIG_NO_COLLATION
 #include "TextBreakIteratorInternalICU.h"
-#include <unicode/usearch.h>
+#include <QtCore/QRegularExpression>
 #endif
 
 using namespace WTF::Unicode;
