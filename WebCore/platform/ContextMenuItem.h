@@ -96,15 +96,6 @@ namespace WebCore {
         ContextMenuItemTagSearchWeb,
         ContextMenuItemTagLookUpInDictionary,
         ContextMenuItemTagOpenWithDefaultApplication,
-        ContextMenuItemPDFActualSize,
-        ContextMenuItemPDFZoomIn,
-        ContextMenuItemPDFZoomOut,
-        ContextMenuItemPDFAutoSize,
-        ContextMenuItemPDFSinglePage,
-        ContextMenuItemPDFFacingPages,
-        ContextMenuItemPDFContinuous,
-        ContextMenuItemPDFNextPage,
-        ContextMenuItemPDFPreviousPage,
         // These are new tags! Not a part of API!!!!
         ContextMenuItemTagOpenLink = 2000,
         ContextMenuItemTagIgnoreGrammar,
@@ -128,8 +119,6 @@ namespace WebCore {
         ContextMenuItemTagDefaultDirection,
         ContextMenuItemTagLeftToRight,
         ContextMenuItemTagRightToLeft,
-        ContextMenuItemTagPDFSinglePageScrolling,
-        ContextMenuItemTagPDFFacingPagesScrolling,
 #if ENABLE(INSPECTOR)
         ContextMenuItemTagInspectElement,
 #endif

@@ -1208,15 +1208,6 @@ void ContextMenuController::checkOrEnableIfNeeded(ContextMenuItem& item) const
         case ContextMenuItemTagSearchInSpotlight:
         case ContextMenuItemTagSearchWeb:
         case ContextMenuItemTagOpenWithDefaultApplication:
-        case ContextMenuItemPDFActualSize:
-        case ContextMenuItemPDFZoomIn:
-        case ContextMenuItemPDFZoomOut:
-        case ContextMenuItemPDFAutoSize:
-        case ContextMenuItemPDFSinglePage:
-        case ContextMenuItemPDFFacingPages:
-        case ContextMenuItemPDFContinuous:
-        case ContextMenuItemPDFNextPage:
-        case ContextMenuItemPDFPreviousPage:
         case ContextMenuItemTagOpenLink:
         case ContextMenuItemTagIgnoreGrammar:
         case ContextMenuItemTagSpellingMenu:
@@ -1227,8 +1218,6 @@ void ContextMenuController::checkOrEnableIfNeeded(ContextMenuItem& item) const
         case ContextMenuItemTagStartSpeaking:
         case ContextMenuItemTagWritingDirectionMenu:
         case ContextMenuItemTagTextDirectionMenu:
-        case ContextMenuItemTagPDFSinglePageScrolling:
-        case ContextMenuItemTagPDFFacingPagesScrolling:
 #if ENABLE(INSPECTOR)
         case ContextMenuItemTagInspectElement:
 #endif
