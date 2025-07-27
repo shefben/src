@@ -31,8 +31,13 @@
 #ifndef ScriptInstance_h
 #define ScriptInstance_h
 
-#include "BridgeJSC.h"
 #include <wtf/RefPtr.h>
+
+namespace JSC {
+namespace Bindings {
+class Instance;
+}
+}
 
 namespace WebCore {
 

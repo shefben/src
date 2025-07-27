@@ -20,7 +20,6 @@
 #include "config.h"
 #include "JSPluginElementFunctions.h"
 
-#include "BridgeJSC.h"
 #include "HTMLNames.h"
 #include "HTMLPlugInElement.h"
 #include "JSHTMLElement.h"

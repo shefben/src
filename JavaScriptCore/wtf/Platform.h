@@ -628,7 +628,7 @@
 #define WTF_USE_WK_SCROLLBAR_PAINTER 1
 #endif
 #if !defined(ENABLE_JAVA_BRIDGE)
-#define ENABLE_JAVA_BRIDGE 1
+#define ENABLE_JAVA_BRIDGE 0
 #endif
 #if !defined(ENABLE_DASHBOARD_SUPPORT)
 #define ENABLE_DASHBOARD_SUPPORT 1
@@ -683,7 +683,7 @@
 #if PLATFORM(ANDROID)
 #define WTF_USE_PTHREADS 1
 #define USE_SYSTEM_MALLOC 1
-#define ENABLE_JAVA_BRIDGE 1
+#define ENABLE_JAVA_BRIDGE 0
 #define LOG_DISABLED 1
 /* Prevents Webkit from drawing the caret in textfields and textareas
    This prevents unnecessary invals. */
