@@ -1257,6 +1257,16 @@
 #define ENABLE_MEDIA_STATISTICS 0
 #endif
 
+#ifndef ENABLE_SVG
+#define ENABLE_SVG 0
+#endif
+#ifndef ENABLE_SVG_ANIMATION
+#define ENABLE_SVG_ANIMATION 0
+#endif
+#ifndef ENABLE_CSS_ANIMATIONS
+#define ENABLE_CSS_ANIMATIONS 0
+#endif
+
 #if defined(__cplusplus)
 
 typedef unsigned char uchar;

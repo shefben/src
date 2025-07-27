@@ -127,8 +127,6 @@
 
         ['exclude', 'AllInOne\\.cpp$'],
 
-        ['exclude', 'rendering/svg/[^/]+\\.cpp'],
-        ['include', 'rendering/svg/RenderSVGAllInOne\\.cpp$'],
       ],
       'mac_framework_private_headers': [
         '<@(webcore_privateheader_files)',
