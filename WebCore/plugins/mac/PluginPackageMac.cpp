@@ -32,9 +32,12 @@
 #include "MIMETypeRegistry.h"
 #include "npruntime_impl.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include "WebCoreNSStringExtras.h"
 #include <wtf/text/CString.h>
+
+#ifndef LOG_NPERROR
+#define LOG_NPERROR(x) do { } while (0)
+#endif
 
 #include <CoreFoundation/CoreFoundation.h>
 

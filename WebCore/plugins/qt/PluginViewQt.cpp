@@ -59,7 +59,6 @@
 #include "PlatformMouseEvent.h"
 #include "PlatformKeyboardEvent.h"
 #include "PluginContainerQt.h"
-#include "PluginDebug.h"
 #include "PluginPackage.h"
 #include "PluginMainThreadScheduler.h"
 #include "QWebPageClient.h"

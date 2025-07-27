@@ -30,7 +30,6 @@
 
 #include "MIMETypeRegistry.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include "Timer.h"
 #include "npruntime_impl.h"
 #include <string.h>

@@ -23,7 +23,6 @@
 #include "npinterface.h"
 #include "npruntime_impl.h"
 #include "PluginDatabase.h"
-#include "PluginDebug.h"
 #include <QPluginLoader>
 #include <wtf/text/CString.h>
 
