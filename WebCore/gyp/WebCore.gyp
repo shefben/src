@@ -36,7 +36,6 @@
       ],
       'include_dirs': [
         '<(project_dir)',
-        '<(project_dir)/icu',
         '<(project_dir)/ForwardingHeaders',
         '<(PRODUCT_DIR)/usr/local/include',
         '/usr/include/libxml2',
@@ -58,7 +57,6 @@
         '$(SDKROOT)/System/Library/Frameworks/OpenGL.framework',
         '$(SDKROOT)/System/Library/Frameworks/QuartzCore.framework',
         '$(SDKROOT)/System/Library/Frameworks/SystemConfiguration.framework',
-        'libicucore.dylib',
         'libobjc.dylib',
         'libxml2.dylib',
         'libz.dylib',
@@ -153,12 +151,6 @@
           'postbuild_name': 'Check For Weak VTables and Externals',
           'action': [
             'sh', '<(project_dir)/gyp/run-if-exists.sh', '<(DEPTH)/../Tools/Scripts/check-for-weak-vtables-and-externals'
-          ],
-        },
-        {
-          'postbuild_name': 'Copy Forwarding and ICU Headers',
-          'action': [
-            'sh', '<(project_dir)/gyp/copy-forwarding-and-icu-headers.sh'
           ],
         },
         {

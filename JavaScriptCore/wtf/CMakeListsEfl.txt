@@ -12,7 +12,6 @@ LIST(APPEND WTF_SOURCES
     ThreadIdentifierDataPthreads.cpp
     ThreadingPthreads.cpp
 
-    unicode/icu/CollatorICU.cpp
 )
 
 IF (ENABLE_GLIB_SUPPORT)
@@ -33,7 +32,6 @@ ENDIF ()
 
 LIST(APPEND WTF_LIBRARIES
     pthread
-    ${ICU_LIBRARIES}
 )
 
 LIST(APPEND WTF_LINK_FLAGS

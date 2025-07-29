@@ -38,10 +38,10 @@
 
 #include <stdbool.h>
 #include <string.h>
-#include <unicode/utypes.h>
-#include <unicode/uchar.h>
-#include <unicode/ustring.h>
-#include <unicode/ushape.h>
+#include <QtCore/qglobal.h>
+#include <QtCore/qchar.h>
+#include <QtCore/QString>
+#include <QtCore/QString>
 #include <wtf/Assertions.h>
 
 /*

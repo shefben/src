@@ -24,9 +24,9 @@
 #define WTF_UNICODE_ICU_H
 
 #include <stdlib.h>
-#include <unicode/uchar.h>
-#include <unicode/ustring.h>
-#include <unicode/utf16.h>
+#include <QtCore/qchar.h>
+#include <QtCore/QString>
+#include <QtCore/qstring.h>
 
 namespace WTF {
 namespace Unicode {

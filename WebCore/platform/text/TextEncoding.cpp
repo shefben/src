@@ -32,7 +32,7 @@
 #include "TextCodec.h"
 #include "TextEncodingRegistry.h"
 #if USE(ICU_UNICODE)
-#include <unicode/unorm.h>
+#include <QtCore/QString>
 #elif USE(QT4_UNICODE)
 #include <QString>
 #elif USE(GLIB_UNICODE)

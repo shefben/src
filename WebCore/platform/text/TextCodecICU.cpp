@@ -28,8 +28,8 @@
 #include "TextCodecICU.h"
 
 #include "ThreadGlobalData.h"
-#include <unicode/ucnv.h>
-#include <unicode/ucnv_cb.h>
+#include <QtCore/QTextCodec>
+#include <QtCore/QTextCodec>
 #include <wtf/Assertions.h>
 #include <wtf/StringExtras.h>
 #include <wtf/Threading.h>

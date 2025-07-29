@@ -39,8 +39,8 @@
 #include "PlatformBridge.h"
 #include <wtf/MathExtras.h>
 
-#include <unicode/uchar.h>
-#include <unicode/unorm.h>
+#include <QtCore/qchar.h>
+#include <QtCore/QString>
 #include <objidl.h>
 #include <mlang.h>
 

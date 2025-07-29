@@ -39,7 +39,7 @@
 #include "HashSet.h"
 #include "SimpleFontData.h"
 #include "StringHash.h"
-#include <unicode/uniset.h>
+#include <QtCore/QSet>
 
 #include <windows.h>
 #include <objidl.h>

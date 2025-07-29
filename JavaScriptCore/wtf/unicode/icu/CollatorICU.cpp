@@ -33,7 +33,7 @@
 
 #include "Assertions.h"
 #include "Threading.h"
-#include <unicode/ucol.h>
+#include <QtCore/QCollator>
 #include <string.h>
 
 #if OS(DARWIN)

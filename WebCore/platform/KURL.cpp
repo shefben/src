@@ -35,7 +35,7 @@
 #include <wtf/text/StringHash.h>
 
 #if USE(ICU_UNICODE)
-#include <unicode/uidna.h>
+#include <QtCore/QUrl>
 #elif USE(QT4_UNICODE)
 //#include <QUrl>
 #elif USE(GLIB_UNICODE)
